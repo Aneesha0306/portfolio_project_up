@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <nav>
+        <a href="#" class="logo"><span>Lakshmi Aneesha Ambati</span></a>
+
+        <ul class="links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#extra">Activities & Certifications</a>
+        </ul>
+        <a href="#contact" class="btn">Contact Me</a>
+    </nav>
+
+    <section id="home">
+        <img src="my_image.jpg" alt="">
+
+        <div class="info-box">
+            <h1><span>Hello, I'm Aneesha</span></h1>
+            <h3><span>Sophomore</span> VIT University</h3>
+            <p>I am an engineering student with a strong passion for machine learning and app development. I enjoy
+                exploring innovative solutions through technology, combining my skills to create impactful applications
+                and intelligent systems.</p>
+        </div>
+
+        <div class="btn-box">
+            <div class="btn">Resume</div>
+            <div class="btn">Contact Me</div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-box">
+            <div class="about-info">
+                <h1><span>About Me</span></h1>
+                <p>I am a second-year Computer Science student specializing in Data Science at VIT Vellore. Recently,
+                    I've developed a keen interest in machine learning and natural language processing
+                    (NLP) and its applications. I've explored this field by building few machine learning projects
+                    using Google Colab.</p>
+            </div>
+
+            <h2><span>Skills</span></h2>
+            <div class="skills">
+                <ul>
+                    <li>
+                        <span><i class='bx bx-chevron-right'></i> HTML </span>
+                    </li>
+                    <li>
+                        <span><i class='bx bx-chevron-right'></i> CSS </span>
+                    </li>
+                    <li>
+                        <span><i class='bx bx-chevron-right'></i> Python </span>
+                    </li>
+
+                </ul>
+
+                <ul>
+                    <li>
+                        <span><i class='bx bx-chevron-right'></i> C++ </span>
+                    </li>
+                    <li>
+                        <span><i class='bx bx-chevron-right'></i> Java </span>
+                    </li>
+                    <li>
+                        <span><i class='bx bx-chevron-right'></i> ML Fundamentals </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <img src="my_image.jpg" alt="">
+    </section>
+
+    <section id="projects">
+        <h1 class="header"><span>Projects</span></h1>
+        <div class="projects-container">
+            <div class="box">
+                <h1><span>News Summarizer</span></h1>
+
+                <p>This Python-based desktop application combines Natural Language Processing (NLP) and sentiment
+                    analysis to extract, summarize, and evaluate news articles. Using Tkinter for the GUI, it provides a
+                    simple interface where users can enter a URL to fetch and analyze content. The app leverages
+                    Newspaper3k to extract article details like the title, author, and publication date, along with
+                    generating a concise summary. It also integrates TextBlob to assess the article's sentiment, giving
+                    insights into whether the content is positive, neutral, or negative. This tool makes it easy to
+                    quickly understand and evaluate news articles efficiently.
+                </p>
+                <img src="news_image.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <h1><span>Credit Card Fraud Detection</span></h1>
+
+                <p>This project uses Logistic Regression to detect fraudulent transactions from a Kaggle dataset. The
+                    dataset includes features like anonymized variables (V1-V28), transaction time, and amount, with a
+                    target variable indicating whether a transaction is legitimate or fraudulent. Due to the dataset's
+                    imbalance, under-sampling is applied to improve model performance. The data is preprocessed to
+                    handle missing values, and key features are analyzed for insights. The model is trained and tested
+                    to evaluate its accuracy in identifying fraudulent transactions effectively.
+                </p>
+                <img src="fraud_img.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="extra">
+        <div class="left-side">
+            <h1>Certifications</h1>
+            <div class="content">
+                <h2>Summer Training Program in AI & Machine Learning</h2>
+                <p>IIT Hyderabad summer training: AI/ML fundamentals and practical projects. Developed voice cloning
+                    using RVC. Explored generative AI for film creation.</p>
+
+                <h2>Certified Entry-Level Python Programmer (PCEP)</h2>
+                <p>Python Institute certified, March 2024. Proficient in core Python concepts: variables, data
+                    structures, functions, and OOP.</p>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <h1>Clubs</h1>
+            <div class="content">
+                <h2>Core Committee Member of ISTE</h2>
+                <p>GRAVITAS Tech Fest: Technical Support for AUGMENTRIX Gaming Workshop. Ensured smooth operations,
+                    troubleshooting, and participant assistance. Facilitated seamless setup and gameplay. Contributed to
+                    a focused learning environment.</p>
+
+                <h2>Toastmasters Member</h2>
+                <p>Toastmasters member: Presentation Mastery Path (Level 1). Developing public speaking and
+                    communication skills. Building confidence and presentation structure. Receiving feedback for ongoing
+                    improvement.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <h1 class="header"><span>Contact</span></h1>
+
+        <form id="contact-form">
+            <div class="input-box">
+                <span>Full Name</span>
+                <input type="text" name="fullname" placeholder="Enter your full name">
+            </div>
+
+            <div class="input-box">
+                <span>Email</span>
+                <input type="text" name="email" placeholder="Enter your Email">
+            </div>
+
+            <div class="input-box">
+                <span>Your Message</span>
+                <input type="text" name="message" placeholder="Enter your message">
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+
+        </form>
+    </section>
+
+    <footer>
+        <div class="col-left">
+            <div class="col_box">
+                <span><i class='bx bxs-location-plus'></i></span>
+                <span>VIT University, Katpadi, Vellore</span>
+            </div>
+
+            <div class="col_box">
+                <span><i class='bx bxs-phone'></i></span>
+                <span>+91 8008700615</span>
+            </div>
+
+            <div class="col_box">
+                <span><i class='bx bx-envelope'></i></span>
+                <span>aneeshaambati117@gmail.com</span>
+            </div>
+
+        </div>
+
+        <div class="col-right">
+            <span>Area Of Focus</span>
+            <p>I focus on developing intelligent systems that analyze data, recognize patterns, and make informed
+                decisions. By leveraging machine learning models, I build solutions that enhance automation, improve
+                accuracy, and deliver actionable insights.</p>
+
+            <div class="social-icons">
+                <a href="https://github.com/Aneesha0306" target="_blank" aria-label="LinkedIn">
+                    <span><i class='bx bxl-linkedin-square'></i></span>
+                </a>
+                <a href="https://github.com/Aneesha0306" target="_blank" aria-label="GitHub">
+                    <span><i class='bx bxl-github'></i></span>
+                </a>
+                <a href="https://github.com/Aneesha0306" target="_blank" aria-label="LinkedIn">
+                    <span><i class='bx bxl-instagram'></i></span>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
